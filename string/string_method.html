@@ -1,0 +1,26 @@
+<html>
+    <body>
+        <p id="str_demo"></p>
+        <button type="button" onclick="myfunction()"> lenght</button>
+        <button type="button" onclick="concatfunction()">concat</button>
+        <button type="button" onclick="uppercase()">upper</button>
+    <script>
+        function myfunction(){
+            let text="hello world";
+            document.getElementById("str_demo").innerHTML=text.length;
+        }
+        function concatfunction(){
+            let text="hello world";
+            let a = " welcome to universe";
+            document.getElementById("str_demo").innerHTML=text.concat(a); 
+        }
+        function uppercase(){
+            let text="helloooo";
+            document.getElementById("str_demo").innerHTML=text.toUpperCase(); // for lower :- tolowercase
+        }
+        
+       
+
+    </script>
+    </body>
+</html>

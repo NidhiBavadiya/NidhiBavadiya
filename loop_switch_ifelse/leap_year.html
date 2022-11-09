@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <p id="l_year"></p>
+        <script>
+            let year=2000;
+            if (year % 4 == 0){
+                document.getElementById("l_year").innerHTML = year + "this year is leap year";
+            }
+            else if(year % 400==0){
+                document.getElementById("l_year").innerHTML = year + "this year is leap year";
+            }
+            else{
+                document.getElementById("l_year").innerHTML = year + "this year is not leap year";
+            }
+        </script>
+    </body>
+</html>

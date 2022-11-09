@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <script>
+            function myfunction(){
+                var x = "";
+                if(navigator.cookieEnabled==true){
+                    x="cookies are enable";
+                }
+                else{
+                    x="cookies  are disable";
+                }
+                document.getElementById("demo").innerHTML=text;
+            }
+
+
+            document.getElementById("b_demo").addEventListener("click",mydemo)
+            function mydemo(){
+            alert("hello")
+            }
+        </script>
+    </head>
+    <body onload="myfunction">  <!--onload event deal with cookies-->
+        <p id="demo"></p>
+        <button id="b_demo">eventlistner</button>
+    </body>
+</html>

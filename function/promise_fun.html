@@ -1,0 +1,26 @@
+<html>
+    <body>
+        <p id="demo"></p>
+        <script>
+        console.log("promise")
+            function myfunction(demo){
+                document.getElementById("demo").innerHTML=demo;
+            }
+            let mypromise = new Promise(function(myresolve,myreject){
+                let x=0;
+                if(x==0){
+                    myresolve("ok")
+                }else{
+                    myreject("sorry")
+                }
+            });
+            mypromise.then(
+                function(value){myfunction(value)},
+                //function(error){myfunction(error)},
+            );
+        </script>
+    </body>
+</html>
+
+
+

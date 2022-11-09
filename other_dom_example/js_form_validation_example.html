@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script>
+          function myfunction(){
+            let validation = document.forms["myform"]["name"].value;
+            if (validation== ""){
+                alert("enter name");
+                return false;
+            }
+          }
+        </script>
+    </head>
+    <body>
+        <form name="myform" onsubmit="return myfunction()" method="post">
+                name: <input type="text" name="name" required> <!-- required keyword is usr for popup message -->
+                <input type="submit" value="submit">
+        </form> 
+    </body>
+</html>

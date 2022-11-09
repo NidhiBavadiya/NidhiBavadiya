@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <meta charset="utf-8"> 
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.7.13/dist/vue.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <title>vuejs example</title>
+    </head>
+    <body>
+        <div id="vue_ex">
+            <h3>{{demo('morning')}}</h3>           <!--call  function  / also use pasing parameter ex -->
+            <h5>{{name}}</h5>
+            <a v-bind:href="website">w3 school</a>
+            <input type="text" v-bind:value="name">          <!-- v-bind  bind the data of different attribute-->
+            <p v-html=" link"></p>
+            <h5>{{l_name}}</h5>
+
+            <p>age is:{{age}}</p>
+            <button v-on:click="add(1)"> add</button>             <!-- v-on use for fire event /onclick event /in function not use ()  -->
+            <button v-on:click="sub"> sub</button>
+            <button v-on:dblclick="add(10)"> add 10</button>             <!-- parameterized function  -->
+        </div>
+        <div id="display" v-on:mouseover="mouse_function">{{x}},{{y}}</div>
+        <script src="app.js"></script>
+    </body>
+</html>

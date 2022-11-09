@@ -1,0 +1,39 @@
+<html>
+    <body>
+        <p>math function</p>
+        <p id="mathdemo"></p>
+        <button type="button" onclick="math_round()">Math_round</button>
+        <button type="button" onclick="math_ceil()">math_ceil</button>
+        <button type="button" onclick="math_floor()">math_floor</button>
+        <button type="button" onclick="math_trunc()">math_trunc</button>
+        <button type="button" onclick="math_root()">power</button>
+        <button type="button" onclick="math_sqrt()">sqrt</button>
+        <button type="button" onclick="math_random()">random value</button>
+        <script>
+            function math_round(){
+                document.getElementById("mathdemo").innerHTML=Math.round(4.7); // in math function M is in uppercase = Math
+            }
+            function math_ceil(){
+                document.getElementById("mathdemo").innerHTML=Math.ceil(5.7);
+            }
+            function math_floor(){
+                document.getElementById("mathdemo").innerHTML= Math.floor(3.7);
+            }
+            function math_trunc(){
+                document.getElementById("mathdemo").innerHTML=Math.trunc(6.7);
+            }
+            function math_root(){
+                document.getElementById("mathdemo").innerHTML=Math.pow(8,2);
+            }
+            function math_sqrt(){
+                document.getElementById("mathdemo").innerHTML=Math.sqrt(8);
+            } 
+            function math_random(){
+                let a = Math.random()*2;
+                document.getElementById("mathdemo").innerHTML= a;
+            } 
+        
+         </script>
+         
+        </body>
+</html>

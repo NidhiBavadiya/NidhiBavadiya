@@ -1,0 +1,27 @@
+<html>
+    <body>
+        <p id="array_demo"></p>
+        <p id="array_add"></p>
+        <p id=" concate_array"></p>
+        <script>
+            const fruits=["apple", "mango","kiwi","orange"];
+          
+            fruits.push("banana");
+           
+            let fruit=fruits.length;
+            document.getElementById("array_demo").innerHTML=fruit;
+            
+            let text="<ul>";
+                for(let i=0;i<fruit;i++){
+                    text += "<li>"+fruits[i]+"</li>";
+                }
+            text+="<ul>";
+             document.getElementById("array_add").innerHTML=text; 
+
+            const person=["ruhi", "viyu","ravi"];
+            let fruitsperson=fruits.concat(person);
+            document.getElementById("concate_array").innerHTML=fruitsperson;
+
+        </script>
+    </body>
+</html>

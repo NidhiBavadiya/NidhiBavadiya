@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <p id="marge_demo"></p>
+        <script>
+            const cars=["audi","volvo"];
+            cars.push("volvo");
+            
+            const fruits=["mango","kiwi","orange","banana"]
+            fruits.pop();
+
+            const person=["john","due"]
+
+            let c_f=cars.concat(fruits,person); // marge three array 
+
+            document.getElementById("marge_demo").innerHTML=c_f;
+        </script>
+    </body>
+</html>

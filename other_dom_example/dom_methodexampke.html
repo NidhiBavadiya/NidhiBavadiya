@@ -1,0 +1,30 @@
+<html>
+    <body>
+        <p id="demo">example of dom element</p>
+        <p id="demo1"></p>
+        <h5>helloooooo</h5>
+        <h4 id="demo2"></h4>
+        <h4 class="hello">hello world</h4>
+        <p id="demo3">hello</p>
+        <h4 id="demo4"></h4>
+        <img id="image" src="../images/1.png" alt="">
+        <script>
+            const value = document.getElementById("demo"); //finding element by id
+            document.getElementById("demo").innerHTML="call element:-" +value.innerHTML;
+      
+            const text = document.getElementsByTagName("h5"); // get element by tagname
+            document.getElementById("demo1").innerHTML="call by tagname:-" + text[0].innerHTML;
+
+            const data = document.getElementsByClassName("hello"); // call by class
+            document.getElementById("demo2").innerHTML="call by class:-" + data[0].innerHTML;
+
+            document.getElementById("demo3").innerHTML="hiiiii" // change the value of p
+
+            const text1=document.getElementById("demo3"); // change the heading tag value
+            text1.innerHTML="new heading"
+
+            document.getElementById("image").src ="../images/2.png" //change the images
+
+        </script>
+    </body>
+</html>

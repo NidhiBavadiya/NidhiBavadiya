@@ -1,0 +1,33 @@
+<html>
+    <body>
+        <p>calculater design</p>
+       <!-- //<input type="text" placeholder="enter number 1" id="value1" >
+        //<input type="text" placeholder="enter number 2" id="value2" > -->
+        <button type="button" onclick="addition()">addition</button>
+        <button type="button" onclick="substraction()">substraction</button>
+        <button type="button" onclick="multiplication()">multiplication</button>
+        <button type="button" onclick="division()">division</button>
+        <p id="cal"></p>
+        <script>
+            var a = 6       // document.getElementById("value1").value;
+            var b = 4       // document.getElementById("value2").value;
+            function addition(){
+                let c = a + b;
+                document.getElementById("cal").innerHTML=c;
+            }
+            function substraction(){
+                let c = a - b;
+                document.getElementById("cal").innerHTML=c;
+            }
+            function multiplication(){
+                let c = a * b;
+                document.getElementById("cal").innerHTML=c;
+            }
+            function division(){
+                let c = a / b;
+                document.getElementById("cal").innerHTML=c;
+            }
+        </script>
+
+    </body>
+</html>

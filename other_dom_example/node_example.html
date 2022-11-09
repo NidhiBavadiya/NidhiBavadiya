@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <p>node attach example</p>
+        <p id="d1">nodes example</p>
+        <p id="node_demo"></p>
+     <script>
+        const text = document.createElement("p");   // use to create appand nodes
+        const text1 = document.createTextNode("this is new node");
+        text.appendChild(text1);
+        const text2 = document.getElementById("node_demo");
+        text2.appendChild(text);
+
+        // const data= document.getElementById("d1");
+        // data.remove();
+        
+     </script>
+    </body>
+</html>

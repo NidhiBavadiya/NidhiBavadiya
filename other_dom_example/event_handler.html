@@ -1,0 +1,29 @@
+<html>
+    <body>
+       
+        <button id="event_button"> click</button>
+        <p id="example"></p>
+        <button id="pera_demo"> add</button>
+        <p id="demo1"></p>
+        <script>
+            var a = document.getElementById("event_button");
+            a.addEventListener("mouseover",first); // work as event perfom in button
+            a.addEventListener("click",second);
+            a.addEventListener("mouseout",third) // function call as argument 
+            function first(){
+              document.getElementById("example").innerHTML+="hello";
+            };
+            function second(){
+                document.getElementById("example").innerHTML+="num";
+            };
+            function third(){
+                document.getElementById("example").innerHTML+="hiiii";
+            };
+            var a=1 , b=2;
+            document.getElementById("pera_demo").addEventListener("click",function(){demo(a,b);}); //declare function and pass parameter
+            function demo(p,q){
+               document.getElementById("demo").innerHTML+= p*q;
+            }
+        </script>
+    </body>
+</html>

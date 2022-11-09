@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <p>call back function demo</p>
+        <p id="callback_demo"></p>
+        <script>
+            function myfunction(value){
+                document.getElementById("callback_demo").innerHTML=value;
+            }
+            function first(num1,num2){
+                let num=num1+num2;
+                    // myfunction(num);  // also call the myfunction in this function
+                return num;
+            }
+
+            // function second(){
+            //     myfunction( "call second function");
+            // }
+            let result=first(5,4) //store result in result variable
+            // second();
+            myfunction(result); // call myfunction throw result variable
+        </script>
+    </body>
+</html>

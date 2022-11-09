@@ -1,0 +1,21 @@
+<html>
+<body>
+        <p id="demo"> enter number</p>
+        <input id="number">
+        <button type="button" onclick="numbervalidation()"> submit</button>
+        <p id="demo"></p>
+        <script>
+            function numbervalidation(){
+            let x=document.getElementById("number").value;
+            if(x<1 || x>10 ||isNaN(x)){
+                Text="plese enter valid input";
+            }
+            else{
+                Text="done";
+            }
+            document.getElementById("demo").innerHTML=text;
+          }
+          document.getElementById("demo").style.color="red";   // example of how to add style 
+        </script>
+    </body>
+</html>

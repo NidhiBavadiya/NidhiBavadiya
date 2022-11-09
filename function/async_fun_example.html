@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <p id="asy_demo"></p>
+        <script>
+            function asy_fun(value){
+                document.getElementById("asy_demo").innerHTML=value;
+            }
+            async function asy_function(){
+                return "hello";
+            }
+            asy_function().then(
+              function(value){asy_fun(value);}
+            );
+        </script>
+    </body>
+</html>

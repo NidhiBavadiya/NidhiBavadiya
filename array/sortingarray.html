@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <p>shorting array</p>
+        <p id="sort_demo"></p>
+        <script>
+            const fruits=["kiwi","mango","banana","orange"]
+            fruits.sort();
+            const c=[20,45,32,76,10,100];
+
+            c.sort(function(a,b){
+                return a-b; // for desanding order b-a 
+            });
+
+            document.getElementById("sort_demo").innerHTML= fruits;
+            
+        </script>
+    </body>
+</html>

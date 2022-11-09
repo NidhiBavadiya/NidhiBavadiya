@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <p id="pattern"></p>
+        <script>
+            let  num=5;
+            let text ="";
+            for( let i=0;i<=num;i++){
+
+                for( let j=0;j<=i;j++){
+
+                    text += "*"; 
+                }
+                text += "\n"; // use backslace  for next line
+            }
+           
+            console.log(text);
+            document.getElementById("pattern").innerHTML=text;
+        </script>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+    <body>
+        <p>example of callback & Asynchronous function</p> 
+        <p id="call_demo2"></p>
+        <script>
+            function myfunction(value){
+                document.getElementById("call_demo2").innerHTML=value;
+            }
+            function addfunction(num1,num2,callback){
+                let add=num1+num2;
+                callback(add);
+            }
+            function subfunction(num1 ,num2,call){
+                let sub=num1-num2;
+                call(sub);
+            }
+             //callback function pass as argument in other function
+            subfunction(6,4 ,myfunction);
+            addfunction(3,5 ,myfunction);
+            //Asynchronous :- function run one by one /Functions running in parallel
+
+        </script>
+    </body>
+</html>

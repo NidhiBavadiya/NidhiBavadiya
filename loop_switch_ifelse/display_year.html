@@ -1,0 +1,50 @@
+<html>
+    <body>
+        <p>this month name</p>
+        <p id="month"></p>
+        <script>
+            let month;
+            switch(new Date().getMonth()){  //in this method getMethod M is in uppercase
+                case 0:
+                    month = "january";
+                break;
+                case 1:
+                    month = "February";
+                break;
+                case 2:
+                    month = "March";
+                break;
+                case 3:
+                    month = "April";
+                break;
+                case 4:
+                    month = " May";
+                break;
+                case 5:
+                    month = "June";
+                break;
+                case 6:
+                    month = "july";
+                break;
+                case 7:
+                    month = "august";
+                break;
+                case 8:
+                    month = "September";
+                break;
+                case 9:
+                    month = "october";
+                break;
+                // case 10:
+                //     month = "november";
+                // break;
+                case 11:
+                    month = "december";
+                break;
+                default: 
+                    month ="value is not match";
+            }
+            document.getElementById("month").innerHTML="month is:--" + month;
+        </script>
+    </body>
+</html>

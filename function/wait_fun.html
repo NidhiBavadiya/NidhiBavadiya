@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <p>await function</p>
+        <p id="wait_demo"></p>
+        <!-- <script>
+            setTimeout(function(){waitfunction("hello");},1000);
+
+            function waitfunction(value){
+                document.getElementById("wait_demo").innerHTML=value;
+            }
+        </script> -->
+        <script>
+            async function myasyncfunction(myresolve){
+            let myPromise = new Promise(function(resolve){
+            setTimeout(function(){resolve("hello");},1000);
+        });
+        document.getElementById("wait_demo").innerHTML= await myPromise;
+        }
+        myasyncfunction();   
+        </script>
+
+    </body>
+</html>
