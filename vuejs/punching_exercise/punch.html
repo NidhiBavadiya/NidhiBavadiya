@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>punching beg</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.7.13/dist/vue.js"></script>
+        <link rel="stylesheet" href="punch.css">
+    </head>
+    <body>
+        <div id="punching_app">
+        <div id="punch" v-bind:class="{b_punch:ended}">
+
+        </div>
+        <div id="burst_punch">
+            <div v-bind:style="{width:a +'%'}"></div>
+        </div>
+        <div id="action">
+            <button v-on:click="punch" v-show="!ended">punch</button>
+            <button v-on:click="restart">restart</button>
+        </div>
+        </div>
+      <script src="punch.js"></script>
+    </body>
+</html>

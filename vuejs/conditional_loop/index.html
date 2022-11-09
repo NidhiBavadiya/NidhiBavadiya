@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <meta charset="utf-8"> 
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.7.13/dist/vue.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <title>conditionl & loop</title>
+    </head>
+    <body>
+        <div id="display_conditional">
+            <h3>condition</h3>
+            <button v-on:click="error=!error">error</button>
+            <button v-on:click="right=!right"> right</button>
+            <p v-if="error">error display</p>
+            <p v-else-if="right">right display</p>
+            <!-- <p v-show="error">error display</p>
+            <p v-show="right">right display</p>                     this shoew property work like if else--> 
+        </div>
+
+        <div id="loop_example">
+            <h3>loop example</h3>
+            <ul>
+                <li v-for="a in fruits">{{a}}</li>          <!--  fruits value store in a  -->
+            </ul>
+            <ul>
+                <li v-for="b in person">{{b.name}}-{{b.age}}</li>
+            </ul>
+            <template v-for="(a,index) in person">
+                <h4>{{index}}.{{a.name}}</h4>
+                <p>{{a.age}}</p>
+            </template>
+            <template v-for="b in person">
+                <div v-for="(value,key) in b" :key="key">
+                    <p>{{key}}-{{value}}</p>
+                </div>
+            </template>
+        </div>
+        <script src="app.js"></script>  
+    </body>
+</html>

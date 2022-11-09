@@ -6,8 +6,7 @@ new Vue({                       //first creat vue instance
         website:'https://www.w3school.com' ,              // data binding v-bind  data of different attribute
         age:25,
         link:'<a href="https://www.w3school.com"> w3school website</a>',
-        x:0,
-        y:0,
+       
     },                              // data property store data of instance 
     methods:{                               //create method 
         demo:function(time){                    //create function in method return function value 
@@ -19,9 +18,21 @@ new Vue({                       //first creat vue instance
         sub:function(){
             this.age--;
         },
+     
+    },
+});
+
+new Vue({  
+    el:'#display',
+    data:{
+        x:0,
+        y:0
+    },
+    methods:{
         mouse_function:function(event){
-            this.x=event.offsetx
-            this.y=event.offsety
+            this.x=event.offsetX;
+            this.y=event.offsetY;
+           
         }
     }
 });

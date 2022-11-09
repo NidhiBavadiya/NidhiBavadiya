@@ -1,0 +1,26 @@
+#punch{
+    width: 300px;
+    height: 600px;
+    background: url('./images/punch.png') no-repeat center;
+    margin: 0 auto; 
+}
+#burst_punch{
+    width: 300px;
+    height: 20px;
+    margin: 0 auto; 
+    border: 1px solid black;
+}
+#punch.b_punch{
+    width: 300px;
+    height: 600px;
+    background: url('./images/burst_punch.png')no-repeat center;
+    margin: 0 auto; 
+}
+#burst_punch div{
+    height: 20px;
+    background-color: red;
+}
+#action{
+    width: 200px;
+    margin: 20px auto;
+}
