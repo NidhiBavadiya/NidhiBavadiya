@@ -1,0 +1,29 @@
+<html>
+  <body>
+    <p id="typedemo"></p>
+    <p id="typedemo1"></p>
+    <p id="typedemo2"></p>
+    <p id="demo3"></p>
+  
+    <script>
+    //     const cars =["audi", "volvo" , "bmw"];
+    // document.getElementById("typedemo3").innerHTML = isArray(cars);
+
+    // function isArray(myArray){
+    //     return isArray.constructor.tostring().indexof("Array")>-1
+    // };
+
+    const fruits = ["Banana", "Orange", "Apple"];
+document.getElementById("demo3").innerHTML = isArray(fruits);
+
+function isArray(myArray) {
+  return myArray.constructor.toString().indexOf("Array") > -1;}
+
+      document.getElementById("typedemo").innerHTML=typeof "nidhi";
+      document.getElementById("typedemo1").innerHTML=typeof function(){};
+      document.getElementById("typedemo2").innerHTML=typeof (5).constructor;  // constructor return function
+     
+  </script>
+
+  </body>
+</html>

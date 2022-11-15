@@ -1,0 +1,27 @@
+<html>
+  <body>
+    <p id="typedemo"></p>
+    <p id="jsondemo"></p>
+    <script>
+
+// let text = '{"employees":[' +
+// '{"firstName":"John","lastName":"Doe" },' +
+// '{"firstName":"Anna","lastName":"Smith" },' +
+// '{"firstName":"Peter","lastName":"Jones" }]}';
+// const obj = JSON.parse(text);
+// document.getElementById("demo").innerHTML =
+// obj.employees[1].firstName + " " + obj.employees[1].lastName;
+
+
+      // let text ='{"cars":['+'{"name":"bmw","color":"white"},' + '{"name":"audi","color":"red"}'] }';
+      const obj=JSON.parse(text);
+      document.getElementById("jsondemo").innerHTML = obj.cars[1].name +" "+obj.cars[1].color;
+
+      document.getElementById("typedemo").innerHTML=typeof "nidhi";
+     
+
+  </script>
+
+  </body>
+</html>
+

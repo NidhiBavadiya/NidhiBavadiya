@@ -5,8 +5,8 @@ new Vue({
     },
     methods:{
         refchange:function(){
-           //console.log(this.$refs.input.value); 
-           this.name=this.$refs.input.value;
+           console.log(this.$refs.input.value); 
+          this.name=this.$refs.input.value;
            console.log(this.$refs.test.innerText)
         }
     }
